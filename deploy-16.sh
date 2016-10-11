@@ -78,7 +78,7 @@ php-mbstring php-xml php7.0-zip php7.0-intl php7.0-bcmath php-soap
 
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
-
+/usr/local/bin/composer config -g repo.packagist composer https://packagist.phpcomposer.com
 # Add Composer Global Bin To Path
 printf "\nPATH=\"$(composer config -g home 2>/dev/null)/vendor/bin:\$PATH\"\n" | tee -a ~/.profile
 
